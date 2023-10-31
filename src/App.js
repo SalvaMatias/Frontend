@@ -1,10 +1,14 @@
 import "./styles.css";
+import Formulario from "./componetes/Formulario";
+import Boton from "./componetes/Boton";
+import Head from "./componetes/Head";
 
 export default function App() {
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+      <Head />
+      <Formulario />
+      <Boton />
     </div>
   );
 }

@@ -8,7 +8,10 @@ export default class Boton extends React.Component {
   }
   render(){
     return(
-      <span class="log();" onclick="login()"> Login </span>
+      <div className="ini">
+        <span>Hola como estas </span>
+        
+      </div>
     )
   }
 }
