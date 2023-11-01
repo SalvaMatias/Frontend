@@ -11,7 +11,7 @@ export default class Head extends React.Component {
       <div class="header">
         <img src />
 
-        <h1> </h1>
+        <h1> UBER O ALGO IGUAL </h1>
       </div>
     );
   }
