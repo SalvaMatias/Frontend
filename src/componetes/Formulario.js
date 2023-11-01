@@ -1,5 +1,6 @@
 import React from "react";
 import Boton from "./Boton";
+import "../styles.css";
 
 export default class Formulario extends React.Component {
   constructor(props) {
@@ -12,7 +13,7 @@ export default class Formulario extends React.Component {
         <form class="form" id="form">
           <label>
             {" "}
-            Nombre:
+            :
             <input />
           </label>
           <label>
@@ -38,16 +39,7 @@ export default class Formulario extends React.Component {
             </label>
           </div>
         </form>
-        <div class="botones">
-          <span class="" onclick="()"></span>
-          <span class="" onclick="()"></span>
-          <span class="" onclick="()">
-            {" "}
-          </span>
-          <span class="" onclick="()">
-            {" "}
-          </span>
-        </div>
+        <Boton />
       </div>
     );
   }

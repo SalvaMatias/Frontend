@@ -1,17 +1,18 @@
-import React from "react"
-import "./styles.css";
+import React from "react";
+import Boton from "./Boton";
+import "../styles.css";
 
 export default class Inicio extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
-    this.state={};
+    this.state = {};
   }
-  render(){
-    return(
+  render() {
+    return (
       <div className="ini">
-        <span>Hola como estas </span>
-        
+        <b> fsdssd </b>
+        <Boton />
       </div>
-    )
+    );
   }
 }

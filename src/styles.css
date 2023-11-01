@@ -2,3 +2,15 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+.ini {
+  background-color: #39b1e1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  
+}

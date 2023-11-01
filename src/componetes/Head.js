@@ -10,12 +10,8 @@ export default class Head extends React.Component {
     return (
       <div class="header">
         <img src />
-        <div class="links">
-          <a href="#">Google</a>
-          <a href="#">Wiki</a>
-          <a href="#">Youtube</a>
-        </div>
-        <h1>Formulario Materias</h1>
+
+        <h1> </h1>
       </div>
     );
   }

@@ -1,6 +1,6 @@
 import React from "react";
 import Boton from "./Boton";
-import "./styles.css";
+import "../styles.css";
 
 export default class Tabla extends React.Component {
   constructor(props) {
@@ -19,6 +19,7 @@ export default class Tabla extends React.Component {
           <th>Notas</th>
           <th>Promedio</th>
         </tr>
+        <Boton/>
       </thead>
     );
   }
