@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles.css";
 
-export default class Boton extends React.Component {
+export default class Head extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
