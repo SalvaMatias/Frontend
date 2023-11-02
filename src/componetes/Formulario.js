@@ -13,7 +13,7 @@ export default class Formulario extends React.Component {
         <form class="form" id="form">
           <label>
             {" "}
-            :
+            Nombre:
             <input />
           </label>
           <label>
@@ -31,15 +31,18 @@ export default class Formulario extends React.Component {
             Ciudad:
             <input />
           </label>
-          <div id="divNotas">
+          <div id="contra">
             <label>
               {" "}
-              :
+              contraseña:
               <input />
             </label>
           </div>
+          <Boton className="botonf" titulo="formulario chofer" />
+          <Boton className="botonf" titulo="formulario cliente" />
+          <Boton className="botonf" titulo="tabla Provincias" />
+          <Boton className="botonf" titulo="tabla autos" />
         </form>
-        <Boton />
       </div>
     );
   }

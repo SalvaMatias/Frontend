@@ -7,6 +7,12 @@ export default class Boton extends React.Component {
     this.state = {};
   }
   render() {
-    return <button > hola </button>;
+    const { titulo, image, className, id } = this.props;
+    return (
+      <button className={className} id={id}>
+        {titulo}
+        {image}
+      </button>
+    );
   }
 }

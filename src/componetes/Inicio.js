@@ -10,8 +10,13 @@ export default class Inicio extends React.Component {
   render() {
     return (
       <div className="ini">
-        <b> fsdssd </b>
-        <Boton />
+        <b> texto de informacion </b>
+        <form class="form" id="form">
+          <Boton className="botoni" titulo="formulario chofer" />
+          <Boton className="botoni" titulo="formulario cliente" />
+          <Boton className="botoni" titulo="tabla Provincias" />
+          <Boton className="botoni" titulo="tabla autos" />
+        </form>
       </div>
     );
   }

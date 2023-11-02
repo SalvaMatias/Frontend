@@ -9,8 +9,6 @@ export default class Head extends React.Component {
   render() {
     return (
       <div class="header">
-        <img src />
-
         <h1> UBER O ALGO IGUAL </h1>
       </div>
     );

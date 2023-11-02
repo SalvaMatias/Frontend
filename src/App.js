@@ -9,9 +9,13 @@ export default function App() {
   return (
     <div className="App">
       <Head />
-      <Inicio />
-      <Formulario />
-      <Boton />
+      <div className="forma">
+        <Inicio />
+      </div>
+      <div className="f">
+        <Formulario />
+      </div>
+
       <talba />
     </div>
   );
