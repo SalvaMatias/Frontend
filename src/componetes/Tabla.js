@@ -9,18 +9,20 @@ export default class Tabla extends React.Component {
   }
   render() {
     return (
-      <thead>
-        <tr>
-          <th>ID</th>
-          <th>Materia</th>
-          <th>Docente</th>
-          <th>Curso</th>
-          <th>Horario</th>
-          <th>Notas</th>
-          <th>Promedio</th>
-        </tr>
-        <Boton/>
-      </thead>
+      <div className="tab">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Materia</th>
+            <th>Docente</th>
+            <th>Curso</th>
+            <th>Horario</th>
+            <th>Notas</th>
+            <th>Promedio</th>
+          </tr>
+          <Boton />
+        </thead>
+      </div>
     );
   }
 }

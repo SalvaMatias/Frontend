@@ -4,6 +4,7 @@ import Boton from "./componetes/Boton";
 import Head from "./componetes/Head";
 import Tabla from "./componetes/Tabla";
 import Inicio from "./componetes/Inicio";
+import Footer from "./componetes/Footer";
 
 export default function App() {
   return (
@@ -15,8 +16,8 @@ export default function App() {
       <div className="f">
         <Formulario />
       </div>
-
-      <talba />
+      <Footer />
+      <Tabla />
     </div>
   );
 }
