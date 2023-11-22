@@ -9,13 +9,17 @@ import Footer from "./componetes/Footer";
 export default function App() {
   return (
     <div className="App">
+
       <Head />
+      
       <div className="forma">
         <Inicio />
       </div>
+
       <div className="f">
         <Formulario />
       </div>
+
       <Footer />
       <Tabla />
     </div>
