@@ -2,6 +2,7 @@
   font-family: sans-serif;
   text-align: center;
   align-items: center;
+  background-color: red;
 }
 
 .ini {
@@ -22,11 +23,15 @@
   justify-content: center;
   align-items: center;
   margin-top: 10px;
+  display: nones;
 }
 
 .header {
   border-bottom: 5px solid;
   background-color: aqua;
+}
+
+.menu {
 }
 
 .formulario {
@@ -40,6 +45,10 @@
   padding: 10px;
   width: 200px;
 }
+.formulario label {
+  display: flex;
+  flex-direction: column;
+}
 
 .f {
   width: 100%;
@@ -47,6 +56,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 10px;
+  display: none;
 }
 
 .tab {
@@ -59,4 +69,39 @@
   border-radius: 10px;
   padding: 10px;
   width: 200px;
+  display: none;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border: 1px solid #ddd; /* Borde alrededor de la tabla */
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #f2f2f2;
+}
+.table td {
+  background-color: #f9f9f9;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table td[colspan] {
+  background-color: #d3d3d3;
+}
+
+/* Borde adicional en las celdas */
+.table th,
+.table td {
+  border: 1px solid #ddd;
 }

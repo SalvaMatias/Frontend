@@ -1,27 +1,40 @@
-import "./styles.css";
-import Formulario from "./componetes/Formulario";
-import Boton from "./componetes/Boton";
+import { useEffect, useState } from "react";
+import TablaAuto from "./componetes/TablaAuto";
+import TablaPro from "./componetes/TablaPro";
+import FormularioCli from "./componetes/FormularioCli";
+import FormularioCho from "./componetes/FormularioCho";
 import Head from "./componetes/Head";
-import Tabla from "./componetes/Tabla";
+import TablaCho from "./componetes/TablaCho";
 import Inicio from "./componetes/Inicio";
 import Footer from "./componetes/Footer";
+import Menu from "./componetes/Menu";
+
+import "./styles.css";
 
 export default function App() {
+  const [pagina, setPagina] = useState("Inicio");
+
+  //Ejemplo de useEffect de marquitos aurelio
+  useEffect(() => {
+    console.log("pagina ha cambiado a: ", pagina);
+  }, [pagina]);
+
   return (
     <div className="App">
-
       <Head />
-      
-      <div className="forma">
-        <Inicio />
-      </div>
+      {/* Permite que podomas cambiar de componetes */}
+      <Menu irA={(nueva) => setPagina(nueva)} />
 
-      <div className="f">
-        <Formulario />
+      <div className="forma">
+        {pagina === "Inicio" && <Inicio />}
+        {pagina === "formChofer" && <FormularioCho />}
+        {pagina === "tabChofer" && <TablaCho />}
+        {pagina === "formCliente" && <FormularioCli />}
+        {pagina === "tabProvincia" && <TablaPro />}
+        {pagina === "TabAuto" && <TablaAuto />}
       </div>
 
       <Footer />
-      <Tabla />
     </div>
   );
 }

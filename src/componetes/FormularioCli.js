@@ -1,16 +1,18 @@
 import React from "react";
 import Boton from "./Boton";
+import Menu from "./Menu";
 import "../styles.css";
 
-export default class Formulario extends React.Component {
+export default class FormularioCli extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
   }
   render() {
     return (
-      <div class="formulario" id="formularioDiv">
-        <form class="form" id="form">
+      <div className="formulario" id="formularioDiv">
+        <form className="form" id="form">
+          <h1> Formulario Cliente </h1>
           <label>
             {" "}
             Nombre:
@@ -28,20 +30,16 @@ export default class Formulario extends React.Component {
           </label>
           <label>
             {" "}
-            Ciudad:
+            Provincia:
             <input />
           </label>
           <div id="contra">
             <label>
               {" "}
-              contraseña:
-              <input />
+              Contraseña:
+              <input type="password" />
             </label>
           </div>
-          <Boton className="botonf" titulo="formulario chofer" />
-          <Boton className="botonf" titulo="formulario cliente" />
-          <Boton className="botonf" titulo="tabla Provincias" />
-          <Boton className="botonf" titulo="tabla autos" />
         </form>
       </div>
     );

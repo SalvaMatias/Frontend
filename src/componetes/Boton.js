@@ -7,13 +7,15 @@ export default class Boton extends React.Component {
     this.state = {};
   }
   render() {
-    const { titulo, image, className, id,click } = this.props;
-    return <input 
-    onClick={()=>click()}
-      type="button" 
-      className={className}   
-      id={id} 
-      value={titulo} 
-    />;
+    const { titulo, image, className, id, click } = this.props;
+    return (
+      <input
+        onClick={() => click()}
+        type="button"
+        className={className}
+        id={id}
+        value={titulo}
+      />
+    );
   }
 }
