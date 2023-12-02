@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles.css";
+
 //La array "const prov"  hara que yo pueda poner Id y Nombre para tabla
 const auto = [
   { id: 1, Nombre: " Toyota Corolla Cross " },
