@@ -33,6 +33,11 @@ export default function Menu({ irA }) {
         titulo="Tabla Auto"
         click={() => irA("TabAuto")}
       />
+      <Boton
+        className="botoni"
+        titulo="Registro"
+        click={() => irA("RegistroCh")}
+      />
     </div>
   );
 }

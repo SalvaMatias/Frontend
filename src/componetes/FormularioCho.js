@@ -96,7 +96,8 @@ export default class FormularioCho extends React.Component {
               Contraseña:
               <input type="password" />
             </label>
-            <Boton />
+            <Boton className="botoni" titulo="enviar" />
+            <Boton className="botoni" titulo="cancelar" click={() => ""} />
           </div>
         </form>
       </div>

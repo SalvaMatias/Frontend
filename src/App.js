@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
+import Head from "./componetes/Head";
+import Inicio from "./componetes/Inicio";
+import Menu from "./componetes/Menu";
 import TablaAuto from "./componetes/TablaAuto";
 import TablaPro from "./componetes/TablaPro";
 import FormularioCli from "./componetes/FormularioCli";
 import FormularioCho from "./componetes/FormularioCho";
-import Head from "./componetes/Head";
 import TablaCho from "./componetes/TablaCho";
-import Inicio from "./componetes/Inicio";
+import Registro from "./componetes/Registro";
 import Footer from "./componetes/Footer";
-import Menu from "./componetes/Menu";
-
 import "./styles.css";
 
 export default function App() {
@@ -22,7 +22,7 @@ export default function App() {
   return (
     <div className="App">
       <Head />
-      {/* Permite que podomas cambiar de componetes */}
+      {/* Permite que podomas viajar a otros componetes */}
       <Menu irA={(nueva) => setPagina(nueva)} />
 
       <div className="forma">
@@ -32,6 +32,7 @@ export default function App() {
         {pagina === "formCliente" && <FormularioCli />}
         {pagina === "tabProvincia" && <TablaPro />}
         {pagina === "TabAuto" && <TablaAuto />}
+        {pagina === "RegistroCh" && <Registro />}
       </div>
 
       <Footer />
